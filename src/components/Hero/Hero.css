@@ -10,9 +10,20 @@
   color: white;
 }
 
-.hero h1, p{
-    text-align: center
+
+.hero h1, .hero p {
+  text-align: center;
+  
 }
+
+.hero h1:hover {
+  color: var(--light-green);
+  text-shadow: 0 0 8px var(--light-green);
+}
+
+
+
+
 
 @keyframes slideInLeft {
   from {

@@ -3,13 +3,15 @@
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   width: 100%;
-  max-width: 1200px;      /* para no ser muy ancho en pantallas grandes */
-  margin: 0 auto;         /* centrar sección */
-  box-sizing: border-box; /* para que padding no agrande ancho */
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
   text-align: center;
   color: white;
   background-color: var(--color-primary);
-  padding: 3rem 2rem;     /* algo de padding lateral para no pegar a bordes */
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .nuestra-esencia.visible {
@@ -17,7 +19,6 @@
   transform: translateY(0);
 }
 
-/* Título con subrayado animado */
 .titulo {
   position: relative;
   font-size: 2.2rem;
@@ -31,21 +32,18 @@
 .titulo::after {
   content: '';
   position: absolute;
-  width: 0%;
   height: 3px;
+  width: 0;
   bottom: -6px;
   left: 0;
   background-color: #48ffd5;
   transition: width 0.5s ease;
 }
 
-.nuestra-esencia.visible .titulo::after {
-  width: 100%;
-}
-
 .titulo:hover {
-  color: #48ffd5;
+  color: var(--light-green);
   transform: scale(1.05);
+  text-shadow: 0 0 8px var(--light-green);
 }
 
 .titulo:hover::after {
@@ -77,6 +75,6 @@
   }
   .nuestra-esencia p {
     font-size: 1rem;
-    max-width: 90%;   
+    max-width: 90%;
   }
 }

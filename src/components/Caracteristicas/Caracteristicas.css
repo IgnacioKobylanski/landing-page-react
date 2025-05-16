@@ -1,0 +1,91 @@
+.caracteristicas {
+  padding: 2rem 1rem;
+  background-color: var(--color-primary);
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+
+.underline-title {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.underline-title::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -6px;
+  left: 0;
+  background-color: var(--light-green);
+  transition: width 0.5s ease;
+}
+
+.underline-title:hover {
+  color: var(--light-green);
+  transform: scale(1.05);
+  text-shadow: 0 0 8px var(--light-green);
+}
+
+.underline-title:hover::after {
+  width: 100%;
+}
+
+.caracteristica-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  color: var(--color-primary);
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.caracteristica-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(72, 255, 213, 0.7);
+}
+
+.caracteristica-card .icon {
+  color: var(--light-green);
+  filter: drop-shadow(0 0 3px var(--color-primary));
+}
+
+.caracteristica-card h3 {
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.caracteristica-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Responsive para que el carousel ajuste bien */
+@media (max-width: 768px) {
+  .caracteristicas {
+    padding: 1.5rem 1rem;
+  }
+  .underline-title {
+    font-size: 1.6rem;
+  }
+  .caracteristica-card {
+    height: auto;
+    padding: 1rem;
+  }
+}

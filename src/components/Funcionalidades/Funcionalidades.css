@@ -1,0 +1,91 @@
+.funcionalidades {
+  padding: 2rem 1rem;
+  background-color: var(--color-primary);
+  margin-top: 2rem;
+}
+
+.funcionalidades h2 {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.underline-title {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.underline-title::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--light-green);
+  transition: width 0.5s ease;
+}
+
+.underline-title:hover {
+  color: var(--light-green);
+  transform: scale(1.05);
+  text-shadow: 0 0 8px var(--light-green);
+}
+
+.underline-title:hover::after {
+  width: 100%;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* @media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+/* Pantallas muy pequeñas: 1 columna */
+@media (max-width: 460px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pantallas entre 461px y 768px: 2 columnas */
+@media (min-width: 461px) and (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Pantallas entre 769px y 1024px: 3 columnas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Pantallas grandes > 1024px: 3 columnas (o más si querés) */
+@media (min-width: 1025px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
