@@ -1,0 +1,123 @@
+:root {
+  --color-primary: #04192a;
+  --color-primary-dark: #031420;
+  --light-green: #48ffd5
+}
+/* * {
+    outline: 1px solid red !important;
+  } */
+
+.navbar{
+  background-color: var(--color-primary-dark);
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1100;
+}
+.navbar:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(72, 255, 213, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.nav_logo img{
+  width: 8rem; 
+  height: auto;
+  padding: 1rem;
+}
+
+.nav_items a {
+  margin: 15px 0;
+  padding: 0 15px;
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+
+
+.nav_items.open {
+  transform: translateX(0);
+}
+
+.nav_toggle{
+  display: none;
+}
+.nav_items a:hover {
+  color: var(--light-green);
+  transition: color 0.3s ease;
+  text-shadow: 0 0 8px var(--light-green);
+}
+
+
+@media (max-width: 1439px) {
+  .nav_items{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: var(--color-primary-dark);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+
+  .nav_toggle.open{
+    transform: translateX(0) !important;
+  }
+
+  .nav_toggle{
+    display: flex !important;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .nav_toggle span{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+  .nav_toggle.open > span{
+    transform: rotate(45deg) translate(0px, -1px);
+  }
+
+  .nav_toggle.open > span:nth-child(2){
+    display: none;
+  }
+
+  .nav_toggle.open > span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px, 1px);
+    background-color: var(--light-green);
+    box-shadow:
+      0 0 8px var(--light-green),
+      0 0 15px var(--light-green),
+      0 0 20px var(--light-green);
+    }
+  .nav_toggle:hover span {
+    background-color: var(--light-green);
+    box-shadow: 0 0 8px var(--light-green);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  
+  .nav_toggle:not(.open) span {
+    background-color: white;
+    box-shadow: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+
+
+  
+}
