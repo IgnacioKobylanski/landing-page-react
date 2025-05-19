@@ -1,8 +1,18 @@
 
+#hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
 
 .hero {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
   padding: 4rem 1rem;
@@ -21,6 +31,10 @@
   text-shadow: 0 0 8px var(--light-green);
 }
 
+.hero p:hover {
+  color: var(--light-green);
+  text-shadow: 0 0 8px var(--light-green);
+ }
 
 
 

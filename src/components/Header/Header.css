@@ -10,11 +10,11 @@
   align-items: center;
   position: relative;
   z-index: 1100;
+  padding: 2rem;
 }
 .navbar:hover {
-  transform: scale(1.01);
   box-shadow: 0 0 20px rgba(72, 255, 213, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 

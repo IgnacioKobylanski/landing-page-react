@@ -1,7 +1,10 @@
 :root {
   --color-primary: #04192a;
   --color-primary-dark: #031420;
-  --light-green: #48ffd5
+  --light-green: #48ffd5;
+  --medium-purple: rgb(94, 90, 151);/* posible variable */
+  --dark-purple: rgb(50, 46, 79);/* posible variable */
+  --light-purple: rgb(179, 61, 110);/* posible variable */
 }
 
 html, body {
@@ -15,11 +18,11 @@ html, body {
   background-color: var(--color-primary-dark);
   padding: 1.5rem 0;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 75rem;
   margin: 0 auto;
   display: flex;
@@ -48,6 +51,3 @@ html, body {
   transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
-  color: #ffc107; 
-}

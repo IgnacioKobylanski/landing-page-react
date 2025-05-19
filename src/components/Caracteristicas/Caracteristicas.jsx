@@ -1,12 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, EffectFade } from "swiper/modules";
 import "../Caracteristicas/Caracteristicas.css";
 import { FaSignal, FaVectorSquare, FaUsersCog } from "react-icons/fa";
 import { TfiReload } from "react-icons/tfi";
 import { BiSolidHappyBeaming } from "react-icons/bi";
 import { MdOutlineSecurity } from "react-icons/md";
+import "swiper/css/effect-fade";
+
 
 const caracteristicasData = [
   { id: 1, icon: <FaSignal size={40} />, title: "Identif. clara de los estados de producción" },
@@ -26,6 +28,9 @@ const Caracteristicas = () => {
         slidesPerView={1}
         loop={true}
         centeredSlides={true}
+        modules={[Autoplay, EffectFade]}
+        effect="fade"
+        fadeEffect={{ crossFade: true }} 
         breakpoints={{
           768: {
             slidesPerView: 1,
@@ -34,6 +39,10 @@ const Caracteristicas = () => {
             slidesPerView: 1,
           },
         }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}    
       >
         {caracteristicasData.map(({ id, icon, title }) => (
           <SwiperSlide key={id}>

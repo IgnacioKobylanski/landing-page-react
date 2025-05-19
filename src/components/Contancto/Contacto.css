@@ -1,0 +1,105 @@
+.contacto {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: -3rem;
+}
+
+.contacto h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: white;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  cursor: default;
+}
+
+.contacto h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: var(--light-green);
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.contacto h2:hover {
+  color: var(--light-green);
+  text-shadow: 0 0 8px var(--light-green);
+}
+
+.contacto h2:hover::after {
+  width: 100%;
+}
+
+.contacto-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contacto-item {
+  background-color: #074353;
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--light-green);
+}
+
+.icon {
+  color: var(--light-green);
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.icon-small {
+  color: var(--light-green);
+  margin-right: 0.5rem;
+}
+
+.contacto-detalle {
+  text-align: center;
+}
+
+.nombre {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contacto-detalle a {
+  color: white;
+  text-decoration: none;
+}
+
+.contacto-detalle a:hover {
+  color: var(--light-green);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contacto-lista {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

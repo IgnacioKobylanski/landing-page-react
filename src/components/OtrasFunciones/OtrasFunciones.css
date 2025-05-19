@@ -41,7 +41,7 @@
 .funciones-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
   max-width: 900px;
   margin: 0 auto;
@@ -51,7 +51,7 @@
   background-color: var(--color-primary-dark);
   border-radius: 10px;
   padding: 1.5rem 1rem;
-  width: 280px;
+  width: 400px;
   min-height: 140px;
   display: flex;
   flex-direction: column;
@@ -64,6 +64,8 @@
   color: white;
   user-select: none;
   position: relative;
+  flex: 1 1 300px;
+  max-width: 400px;
 }
 
 .funcion-card .icon-container {
