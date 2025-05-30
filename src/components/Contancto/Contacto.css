@@ -1,6 +1,6 @@
 .contacto {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-white);
   padding: 3rem 1rem;
   max-width: 1200px;
   margin: auto;
@@ -12,7 +12,7 @@
 .contacto h2 {
   font-size: 2.2rem;
   margin-bottom: 2rem;
-  color: white;
+  color: var(--color-white);
   position: relative;
   display: inline-block;
   transition: color 0.3s ease, text-shadow 0.3s ease;
@@ -49,7 +49,7 @@
 }
 
 .contacto-item {
-  background-color: #074353;
+  background-color: var(--color-contacto-item);
   padding: 1.5rem;
   border-radius: 12px;
   flex: 1 1 300px;
@@ -87,7 +87,7 @@
 }
 
 .contacto-detalle a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
 }
 
@@ -96,7 +96,6 @@
   text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .contacto-lista {
     flex-direction: column;

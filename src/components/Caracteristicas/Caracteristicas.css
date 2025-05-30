@@ -5,7 +5,7 @@
   margin: 2rem auto 0 auto;
   box-sizing: border-box;
   text-align: center;
-  color: white;
+  color: var(--color-white);
 }
 
 .underline-title {
@@ -39,10 +39,10 @@
 }
 
 .caracteristica-card {
-  background-color: white;
+  background-color: var(--color-white);
   border-radius: 12px;
   padding: 1.5rem 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px var(--shadow-black-light);
   color: var(--color-primary);
   height: 180px;
   min-height: 200px;
@@ -58,7 +58,7 @@
 
 .caracteristica-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(72, 255, 213, 0.7);
+  box-shadow: 0 8px 20px var(--light-green-glow-soft);;
 }
 
 .caracteristica-card .icon {
@@ -77,7 +77,6 @@
   line-height: 1.4;
 }
 
-/* Responsive para que el carousel ajuste bien */
 @media (max-width: 768px) {
   .caracteristicas {
     padding: 1.5rem 1rem;

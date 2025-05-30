@@ -1,10 +1,18 @@
 :root {
   --color-primary: #04192a;
   --color-primary-dark: #031420;
+  --shadow-black-light: #00000026;
+  --text-shadow-black-medium: #00000066;
+  --color-contacto-item: #074353;
   --light-green: #48ffd5;
+  --light-green-glow: #48ffd5b3;
+  --hover-green: #48FFD533;
+  --color-white: #ffffff;
   --medium-purple: rgb(94, 90, 151);/* posible variable */
+  --purple-glow: #5e5a97b3;/* reemplaza a  --light-green-glow */
   --dark-purple: rgb(50, 46, 79);/* posible variable */
-  --light-purple: rgb(179, 61, 110);/* posible variable */
+  --light-purple: rgb(179, 61, 110);/* reemplaza a  --light-green*/
+  --glow-purple: rgb(220, 120, 160);/* podria reemplazar tambien a --light-purple */
 }
 
 html, body {

@@ -4,7 +4,7 @@ Footer{
     justify-content: center;
     background-color: var(--color-primary-dark);
     min-height: 10vh;
-    color: white;
+    color: var(--color-white);
     align-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;

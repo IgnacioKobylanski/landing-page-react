@@ -1,8 +1,6 @@
 .soluciones {
-
-
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-white);
   padding: 3rem 1rem;
   max-width: 1200px;
   margin: auto;
@@ -10,7 +8,7 @@
 .soluciones {
   text-align: center;
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-white);
   padding: 3rem 1rem;
   max-width: 1200px;
   margin: auto;
@@ -89,7 +87,7 @@
 .soluciones-imagen {
   flex: 1;
   height: 200px;
-  background-color: #074353;
+  background-color: var( --color-contacto-item);
   border-radius: 12px;
   display: flex;
   justify-content: center;
