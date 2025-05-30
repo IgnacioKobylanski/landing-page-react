@@ -25,7 +25,7 @@ html, body {
 .header {
   background-color: var(--color-primary-dark);
   padding: 1.5rem 0;
-  color: white;
+  color: var(--color-white);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -52,7 +52,7 @@ html, body {
 }
 
 .nav-links li a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
