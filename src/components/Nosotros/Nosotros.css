@@ -3,15 +3,13 @@
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
   text-align: center;
   color: var(--color-white);
-  background-color: var(--color-primary);
-  padding: 3rem 2rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  background-color: var( --light-blue);
+
+
 }
 
 .nuestra-esencia.visible {
@@ -36,14 +34,14 @@
   width: 0;
   bottom: -6px;
   left: 0;
-  background-color: var(--light-green);
+  background-color: var(--orange);
   transition: width 0.5s ease;
 }
 
 .titulo:hover {
-  color: var(--light-green);
+  color: var(--orange);
   transform: scale(1.05);
-  text-shadow: 0 0 8px var(--light-green);
+  text-shadow: 0 0 8px var(--orange-light);
 }
 
 .titulo:hover::after {

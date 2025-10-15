@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import "../NuestraEsencia/NuestraEsencia.css";
+import "../Nosotros/Nosotros.css";
 
-const NuestraEsencia = () => {
+const Nosotros = () => {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -27,13 +27,13 @@ const NuestraEsencia = () => {
       className={`nuestra-esencia ${visible ? 'visible' : ''}`} 
       ref={ref}
     >
-      <h2 className="titulo">Nuestra Esencia</h2>
+      <h2 className="titulo">Único sistema desarrollado por ingenieros y expertos del rubro</h2>
       <p>
-        Creamos plataformas de gestión de negocios simples de operar, de alto impacto en los resultados, 
-        tanto operacionales como económicos, y que promueven una excelente comunicación con sus usuarios.
+        Nuestra historia comienza con una consultoría en el sector del packaging. De una simple planilla de cálculos nació un ERP/MES integral, modular y escalable.
+        EquiSystem es un sistema que integra todos los procesos de la producción, especializado en convertidores, gráficas y empresas de envases.
       </p>
     </section>
   );
 };
 
-export default NuestraEsencia;
+export default Nosotros;

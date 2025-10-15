@@ -1,12 +1,11 @@
 .contacto {
-  background-color: var(--color-primary);
+  background-color: var(--blue-light  );
   color: var(--color-white);
   padding: 3rem 1rem;
-  max-width: 1200px;
   margin: auto;
   border-radius: 12px;
   text-align: center;
-  margin-top: -3rem;
+  margin-top: -4rem;
 }
 
 .contacto h2 {
@@ -26,15 +25,15 @@
   bottom: -6px;
   width: 0;
   height: 3px;
-  background-color: var(--light-green);
+  background-color: var(--orange);
   border-radius: 2px;
   transform: translateX(-50%);
   transition: width 0.3s ease;
 }
 
 .contacto h2:hover {
-  color: var(--light-green);
-  text-shadow: 0 0 8px var(--light-green);
+  color: var(--orange);
+  text-shadow: 0 0 8px var(--orange);
 }
 
 .contacto h2:hover::after {
@@ -49,7 +48,7 @@
 }
 
 .contacto-item {
-  background-color: var(--color-contacto-item);
+  background-color: var(--orange);
   padding: 1.5rem;
   border-radius: 12px;
   flex: 1 1 300px;
@@ -62,17 +61,17 @@
 
 .contacto-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px var(--light-green);
+  box-shadow: 0 0 15px var(--orange);
 }
 
 .icon {
-  color: var(--light-green);
+  color: var(--color-white);
   font-size: 2rem;
   margin-bottom: 0.8rem;
 }
 
 .icon-small {
-  color: var(--light-green);
+  color: var(--color-white);
   margin-right: 0.5rem;
 }
 
@@ -92,7 +91,7 @@
 }
 
 .contacto-detalle a:hover {
-  color: var(--light-green);
+  color: var(--blue-background);
   text-decoration: underline;
 }
 

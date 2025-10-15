@@ -1,21 +1,29 @@
 import React from "react";
-import "../Footer/Footer.css"
-import { FaFacebookSquare} from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import "../Footer/Footer.css";
 import { FaInstagram } from "react-icons/fa6";
-import { IoLogoYoutube } from "react-icons/io5";
+import { CiLinkedin } from "react-icons/ci";
 
 const Footer = () => {
   return (
-      <footer>
-          <p>&copy; {new Date().getFullYear()} Equi System. All rights reserved.</p>
-          <div className="social-media">
-          <FaFacebookSquare />
-          <FaSquareXTwitter />
+    <footer>
+      <p>&copy; {new Date().getFullYear()} Equi System. All rights reserved.</p>
+      <div className="social-media">
+        <a 
+          href="http://instagram.com/equi_system/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
           <FaInstagram />
-          <IoLogoYoutube />
-          </div>
-      </footer>
+        </a>
+        <a 
+          href="https://ar.linkedin.com/company/equi-system" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <CiLinkedin />
+        </a>
+      </div>
+    </footer>
   );
 };
 

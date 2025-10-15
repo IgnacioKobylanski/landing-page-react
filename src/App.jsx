@@ -2,9 +2,11 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
-import NuestraEsencia from './components/NuestraEsencia/NuestraEsencia'
-import Funcionalidades from './components/Funcionalidades/Funcionalidades'
+import Nosotros from './components/Nosotros/Nosotros'
+import Beneficios from './components/Beneficios/Beneficios'
 import Caracteristicas from './components/Caracteristicas/Caracteristicas'
+import CasoDeExito from './components/CasoDeExito/CasoDeExito'
+import Ventajas from './components/Ventajas/Ventajas'
 import OtrasFunciones from './components/OtrasFunciones/OtrasFunciones'
 import Soluciones from './components/Soluciones/Soluciones'
 import Contacto from './components/Contancto/Contancto'
@@ -18,11 +20,11 @@ function App() {
     <>
       <Header />
       <Hero />
-      <NuestraEsencia />
-      <Funcionalidades />
+      <Nosotros />
       <Caracteristicas />
-      <OtrasFunciones />
-      <Soluciones />
+      <Beneficios />
+      <CasoDeExito />
+      <Ventajas />
       <Contacto />
       <Footer />
       <BotonScroll />

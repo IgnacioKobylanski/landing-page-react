@@ -8,37 +8,36 @@
 }
 
 .card {
-  background-color: var(--light-green);
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px var(--shadow-black-light);
-  color: var(--color-white);
-  text-shadow: 0 0 4px var(--text-shadow-black-medium);
   display: flex;
+  flex-direction: column;  /* icono, título y descripción en columna */
+  justify-content: flex-start; /* alineado arriba, no centrado vertical */
   align-items: center;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
-  max-width: 25rem;
-  height: 15rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 25rem;        /* ancho máximo */
+  min-height: 15rem;       /* altura mínima */
+  height: auto; 
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px var(--light-green-glow);
+  box-shadow: 0 8px 20px var(--hover-orange-light);
+  background-color: var(--hover-orange-dark); 
 }
 
 .card-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .card h3 {
   margin: 0 0 0.75rem 0;
   font-weight: 600;
   font-size: 1.3rem;
-  color: var(--color-primary-dark);
+  color: var(--color-white);
 }
 
 .card p {

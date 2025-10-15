@@ -1,13 +1,6 @@
 .soluciones {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  padding: 3rem 1rem;
-  max-width: 1200px;
-  margin: auto;
-}
-.soluciones {
   text-align: center;
-  background-color: var(--color-primary);
+  background-color: var(--blue-background);
   color: var(--color-white);
   padding: 3rem 1rem;
   max-width: 1200px;
@@ -29,23 +22,21 @@
   left: 50%;
   height: 3px;
   width: 0;
-  background-color: var(--light-green);
+  background-color: var(--orange);
   border-radius: 2px;
   transform: translateX(-50%);
   transition: width 0.3s ease;
 }
 
 .soluciones h2:hover {
-  color: var(--light-green);
+  color: var(--orange);
   transform: scale(1.05);
-  text-shadow: 0 0 8px var(--light-green);
+  text-shadow: 0 0 8px var(--orange);
 }
 
 .soluciones h2:hover::after {
   width: 100%;
 }
-
-
 
 .soluciones-bloque {
   display: flex;
@@ -64,7 +55,7 @@
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--light-green);
+  color: var(--color-white);
 }
 
 .soluciones-texto ul {
@@ -81,13 +72,13 @@
 }
 
 .icon {
-  color: var(--light-green);
+  color: var(--color-white)!important;
 }
 
 .soluciones-imagen {
   flex: 1;
   height: 200px;
-  background-color: var( --color-contacto-item);
+  background-color: var( --orange);
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -96,13 +87,13 @@
 }
 
 .imagen-icono {
-  color: var(--light-green);
+  color: var(--color-white);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .hoverable:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px var(--light-green);
+  box-shadow: 0 0 20px var(--orange);
 }
 
 .hoverable:hover .imagen-icono {

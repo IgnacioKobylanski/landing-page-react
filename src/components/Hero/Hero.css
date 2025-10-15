@@ -15,8 +15,8 @@
   flex-direction: row;
   align-items: center;
   text-align: center;
-  padding: 4rem 1rem;
-  background-color: var(--color-primary);
+  padding: 3rem 1rem;
+  background-color: var(--dark-blue);
   color: var(--color-white);
 }
 
@@ -27,13 +27,13 @@
 }
 
 .hero h1:hover {
-  color: var(--light-green);
-  text-shadow: 0 0 8px var(--light-green);
+  color: var(--orange);
+  text-shadow: 0 0 8px var(--hover-orange-light);
 }
 
 .hero p:hover {
-  color: var(--light-green);
-  text-shadow: 0 0 8px var(--light-green);
+  color: var(--orange);
+  text-shadow: 0 0 8px var(--hover-orange-light);
  }
 
 
@@ -72,9 +72,7 @@
   width: 100%;
   max-width: 500px;
   height: auto;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px var(--shadow-black-light);
+  margin-bottom: 1rem;
 }
 
 .hero p {

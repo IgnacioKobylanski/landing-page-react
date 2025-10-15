@@ -1,4 +1,5 @@
 :root {
+  /*Pagina verde*/
   --color-primary: #04192a;
   --color-primary-dark: #031420;
   --shadow-black-light: #00000026;
@@ -7,12 +8,39 @@
   --light-green: #48ffd5;
   --light-green-glow: #48ffd5b3;
   --hover-green: #48FFD533;
-  --color-white: #ffffff;
+  /*Pagina violeta*/
   --medium-purple: rgb(94, 90, 151);/* posible variable */
   --purple-glow: #5e5a97b3;/* reemplaza a  --light-green-glow */
   --dark-purple: rgb(50, 46, 79);/* posible variable */
   --light-purple: rgb(179, 61, 110);/* reemplaza a  --light-green*/
   --glow-purple: rgb(220, 120, 160);/* podria reemplazar tambien a --light-purple */
+  
+  /*Estilos actualizados*/
+  --blue-background: #1d3673;
+  --dark-blue:  #263d89;
+  --light-blue:  #5c6fd4;
+  --orange: #ef8e3e;
+  --orange-light:#f3cba2;
+  --color-white: #ffffff;
+
+
+  /*posibles variaciones*/
+  --gray-background: #d2d4d9;
+  --hover-orange-light: #ffa560;
+  --hover-orange-dark: #cc6d1f;
+  --glow-orange-medium: #ef8e3e80;
+  
+  /*f3cba2 (naranja claro fondo)
+celeste letras: 9ebfd9
+gris logo: 181818
+#263d89 LOGO - AZUL FONDO ▮
+1d3673 azul mas oscuro
+#eaad45 LOGO - NARANJA ARRIBA ▮
+#5c6fd4 LOGO - CELESTE ABAJO ▮
+#d2d4d9 LOGO - GRIS COLOR TIPOGRAFÍA ▮
+#000000 NEGRO FONDO Y TEXTO ▮
+#ef8e3e NARANJA FONDO Y TEXTO ▮*/
+
 }
 
 html, body {
@@ -24,7 +52,7 @@ html, body {
 
 
 .header {
-  background-color: var(--color-primary-dark);
+  background-color: var(--blue-background);
   padding: 1.5rem 0;
   color: var(--color-white);
   font-family: 'Poppins', sans-serif;

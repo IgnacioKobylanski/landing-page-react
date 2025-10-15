@@ -1,5 +1,5 @@
 .otras-funciones {
-  background-color: var(--color-primary);
+  background-color: var(--blue-background);
   color: var(--color-white);
   max-width: 1200px;
   margin: 3rem auto;
@@ -24,14 +24,14 @@
   height: 3px;
   bottom: -6px;
   left: 0;
-  background-color: var(--light-green);
+  background-color: var(--orange);
   transition: width 0.5s ease;
 }
 
 .underline-title:hover {
-  color: var(--light-green);
+  color: var(--orange);
   transform: scale(1.05);
-  text-shadow: 0 0 8px var(--light-green);
+  text-shadow: 0 0 8px var(--orange);
 }
 
 .underline-title:hover::after {
@@ -48,7 +48,7 @@
 }
 
 .funcion-card {
-  background-color: var(--color-primary-dark);
+  background-color: var(--orange);
   border-radius: 10px;
   padding: 1.5rem 1rem;
   width: 400px;
@@ -70,7 +70,7 @@
 
 .funcion-card .icon-container {
   margin-bottom: 0.8rem;
-  color: var(--light-green);
+  color: var(--color-white);
   transition: color 0.3s ease, transform 0.3s ease;
   font-size: 2.5rem;
 }
@@ -82,15 +82,14 @@
 }
 
 .funcion-card:hover {
-  background-color: var(--color-contacto-item);
-  box-shadow: 0 0 15px var(--light-green);
+  background-color: var(--orange);
+  box-shadow: 0 0 15px var(--glow-orange-medium);
   transform: translateY(-6px);
-  color: var(--light-green);
+  color: var(--color-white);
 }
 
 .funcion-card:hover .icon-container {
-  color: var(--light-green);
-  transform: scale(1.2);
+  color: var(--color-white);
 }
 
 .zigzag-left {

@@ -1,10 +1,9 @@
+
 .caracteristicas {
-  padding: 2rem 1rem;
-  background-color: var(--color-primary);
-  max-width: 1200px;
-  margin: 2rem auto 0 auto;
+  background-color: var(--light-blue);
+  width: 100%;
+  padding: 2rem 0;
   box-sizing: border-box;
-  text-align: center;
   color: var(--color-white);
 }
 
@@ -24,14 +23,14 @@
   height: 3px;
   bottom: -6px;
   left: 0;
-  background-color: var(--light-green);
+  background-color: var(--orange);
   transition: width 0.5s ease;
 }
 
 .underline-title:hover {
-  color: var(--light-green);
+  color: var(--orange);
   transform: scale(1.05);
-  text-shadow: 0 0 8px var(--light-green);
+  text-shadow: 0 0 8px var(--hover-orange-light);
 }
 
 .underline-title:hover::after {
@@ -41,9 +40,9 @@
 .caracteristica-card {
   background-color: var(--color-white);
   border-radius: 12px;
-  padding: 1.5rem 1rem;
+  margin: 0;
   box-shadow: 0 4px 8px var(--shadow-black-light);
-  color: var(--color-primary);
+  color: var(--orange);
   height: 180px;
   min-height: 200px;
   display: flex;
@@ -54,16 +53,18 @@
   gap: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
+  max-width: 1200px;
+  padding: 0 1.5rem;
 }
 
 .caracteristica-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px var(--light-green-glow-soft);;
+  box-shadow: 0 8px 20px var(--orange);
 }
 
 .caracteristica-card .icon {
-  color: var(--light-green);
-  filter: drop-shadow(0 0 3px var(--color-primary));
+  color: var(--orange)!important;
+  filter: drop-shadow(0 0 3px var(--blue-background));
 }
 
 .caracteristica-card h3 {
@@ -76,6 +77,42 @@
   font-size: 1rem;
   line-height: 1.4;
 }
+.caracteristicas-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.logo-slide {
+  max-width: 300px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.boton-contacto-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.boton-contacto {
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--orange);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.boton-contacto:hover {
+  background-color: var(--hover-orange-light);
+  transform: scale(1.05);
+  color: var(--dark-blue);
+}
+
+
 
 @media (max-width: 768px) {
   .caracteristicas {
@@ -88,4 +125,9 @@
     height: auto;
     padding: 1rem;
   }
+  .logo-slide {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+}
 }

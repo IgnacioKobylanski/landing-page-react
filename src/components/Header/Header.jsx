@@ -12,11 +12,9 @@ const Header = () => {
 
       <div className={`nav_items ${isOpen && "open"}`} >
   <a href="#hero" onClick={() => setIsOpen(false)}>Home</a>
-  <a href="#esencia" onClick={() => setIsOpen(false)}>Nuestra Esencia</a>
-  <a href="#funcionalidades" onClick={() => setIsOpen(false)}>Funcionalidades</a>
-  <a href="#caracteristicas" onClick={() => setIsOpen(false)}>Características</a>
-  <a href="#otras" onClick={() => setIsOpen(false)}>Otras Funciones</a>
-  <a href="#soluciones" onClick={() => setIsOpen(false)}>Soluciones</a>
+  <a href="#esencia" onClick={() => setIsOpen(false)}>Nosotros</a>
+  <a href="#funcionalidades" onClick={() => setIsOpen(false)}>Beneficios</a>
+  <a href="#ventajas" onClick={() => setIsOpen(false)}>Ventajas</a>
   <a href="#contacto" onClick={() => setIsOpen(false)}>Contacto</a>
 </div>
 

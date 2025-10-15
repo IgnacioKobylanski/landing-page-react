@@ -1,5 +1,5 @@
-.navbar{
-  background-color: var(--color-primary-dark);
+.navbar {
+  background-color: var(--blue-background);
   min-height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -8,16 +8,19 @@
   z-index: 1100;
   padding: 2rem;
 }
+
 .navbar:hover {
-  box-shadow: 0 0 20px var(--hover-green);
-  
+  box-shadow: 0 0 20px var(--orange-light);
 }
 
-
-.nav_logo img{
-  width: 12rem; 
+.nav_logo img {
+  width: 6rem;
   height: auto;
   padding: 1rem;
+  /*consultar sobre el border*/
+  border: 5px solid var(--orange);
+  border-radius: 50%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav_items a {
@@ -26,84 +29,83 @@
   color: var(--color-white);
   position: relative;
   text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-
+.nav_items a:hover {
+  color: var(--orange);
+  text-shadow: 0 0 8px var(--orange-light);
+}
 
 .nav_items.open {
   transform: translateX(0);
 }
 
-.nav_toggle{
+.nav_toggle {
   display: none;
 }
-.nav_items a:hover {
-  color: var(--light-green);
-  transition: color 0.3s ease;
-  text-shadow: 0 0 8px var(--light-green);
-}
 
-
+/* ====== RESPONSIVE ====== */
 @media (max-width: 1439px) {
-  .nav_items{
-    position: absolute;
-    top: 70px;
+
+  .nav_items {
+    position: fixed;
+    top: 0;
     left: 0;
-    background-color: var(--color-primary-dark);
+    background-color: var(--blue-background);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     transform: translateX(-100%);
-    transition: 0.3s ease all;
+    transition: transform 0.3s ease;
+    z-index: 1000;
   }
 
-  .nav_toggle.open{
-    transform: translateX(0) !important;
+  .nav_items.open {
+    transform: translateX(0);
   }
 
-  .nav_toggle{
+  /* === BOTÓN HAMBURGUESA === */
+  .nav_toggle {
     display: flex !important;
-    flex-direction: column;
-    margin: 15px;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2000;
   }
 
-  .nav_toggle span{
-    width: 30px;
-    height: 4px;
+  .nav_toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
     background-color: var(--color-white);
-    margin-bottom: 5px;
     border-radius: 2px;
-    transform-origin: 5px 0px;
-    transition: all 0.2s linear;
+    transform-origin: 0% 50%;
+    transition: transform 0.4s ease, opacity 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   }
 
-  .nav_toggle.open > span{
-    transform: rotate(45deg) translate(0px, -1px);
-  }
-
-  .nav_toggle.open > span:nth-child(2){
-    display: none;
-  }
-
-  .nav_toggle.open > span:nth-child(3){
-    transform: rotate(-45deg) translate(-5px, 1px);
-    background-color: var(--light-green);
-    box-shadow:
-      0 0 8px var(--light-green),
-      0 0 15px var(--light-green),
-      0 0 20px var(--light-green);
-    }
-  .nav_toggle:hover span {
-    background-color: var(--light-green);
-    box-shadow: 0 0 8px var(--light-green);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  
-  .nav_toggle:not(.open) span {
+  /* ====== ESTADO ABIERTO (X visible y centrada) ====== */
+  .nav_toggle.open span {
     background-color: var(--color-white);
     box-shadow: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }  
+  }
+
+  .nav_toggle.open span:nth-child(1) {
+    transform: rotate(47deg);
+  }
+
+  .nav_toggle.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  .nav_toggle.open span:nth-child(3) {
+    transform: rotate(-48deg);
+  }
 }

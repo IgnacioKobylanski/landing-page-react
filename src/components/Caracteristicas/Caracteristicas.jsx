@@ -3,26 +3,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "../Caracteristicas/Caracteristicas.css";
-import { FaSignal, FaVectorSquare, FaUsersCog } from "react-icons/fa";
-import { TfiReload } from "react-icons/tfi";
-import { BiSolidHappyBeaming } from "react-icons/bi";
-import { MdOutlineSecurity } from "react-icons/md";
 import "swiper/css/effect-fade";
+import logoAnca from "../../assets/Logos/LogoAncaPlast.png";
+import logoOtero from "../../assets/Logos/LogoCotillonOtero.png";
+import logoFlexy from "../../assets/Logos/LogoFlexyplas.png";
+import logoProveedores from "../../assets/Logos/LogoProveedoresIndustrales.png";
 
 
 const caracteristicasData = [
-  { id: 1, icon: <FaSignal size={40} />, title: "Identif. clara de los estados de producción" },
-  { id: 2, icon: <TfiReload size={40} />, title: "Trazabilidad" },
-  { id: 3, icon: <BiSolidHappyBeaming size={40} />, title: "Interfaz Amigable" },
-  { id: 4, icon: <FaVectorSquare size={40} />, title: "Interacción con otros Softwares" },
-  { id: 5, icon: <FaUsersCog size={40} />, title: "Multitasking Multiusuario" },
-  { id: 6, icon: <MdOutlineSecurity size={40} />, title: "Control de accesos y permisos" },
+  { id: 1, icon: <img src={logoAnca} alt="Anca Plast" className="logo-slide" />, title: "Anca Plast" },
+  { id: 2, icon: <img src={logoOtero} alt="Cotillon Otero" className="logo-slide" />, title: "Cotillon Otero" },
+  { id: 3, icon: <img src={logoFlexy} alt="Flexyplas" className="logo-slide" />, title: "Flexyplas" },
+  { id: 4, icon: <img src={logoProveedores} alt="Proveedores Industrales" className="logo-slide" />, title: "Proveedores Industrales" },
 ];
+
 
 const Caracteristicas = () => {
   return (
     <section id="caracteristicas" className="caracteristicas">
-      <h2 className="underline-title">Características</h2>
+      <div className="caracteristicas-contenido">
       <Swiper
         spaceBetween={30}
         slidesPerView={1}
@@ -40,7 +39,7 @@ const Caracteristicas = () => {
           },
         }}
         autoplay={{
-          delay: 3000,
+          delay: 1500,
           disableOnInteraction: false,
         }}    
       >
@@ -48,11 +47,17 @@ const Caracteristicas = () => {
           <SwiperSlide key={id}>
             <div className="caracteristica-card">
               <div className="icon">{icon}</div>
-              <h3>{title}</h3>
+              {/* <h3>{title}</h3> */}
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="boton-contacto-wrapper">
+          <a href="#contacto" className="boton-contacto">
+            Contacta un asesor
+          </a>
+        </div>
+      </div>
     </section>
   );
 };
