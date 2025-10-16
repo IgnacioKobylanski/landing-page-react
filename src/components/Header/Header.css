@@ -9,10 +9,6 @@
   padding: 2rem;
 }
 
-.navbar:hover {
-  box-shadow: 0 0 20px var(--orange-light);
-}
-
 .nav_logo img {
   width: 6rem;
   height: auto;
@@ -34,7 +30,6 @@
 
 .nav_items a:hover {
   color: var(--orange);
-  text-shadow: 0 0 8px var(--orange-light);
 }
 
 .nav_items.open {

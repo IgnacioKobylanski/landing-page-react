@@ -9,22 +9,16 @@
 
 .card {
   display: flex;
-  flex-direction: column;  /* icono, título y descripción en columna */
-  justify-content: flex-start; /* alineado arriba, no centrado vertical */
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  max-width: 25rem;        /* ancho máximo */
-  min-height: 15rem;       /* altura mínima */
+  max-width: 25rem;
+  min-height: 15rem;
   height: auto; 
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px var(--hover-orange-light);
-  background-color: var(--hover-orange-dark); 
 }
 
 .card-icon {

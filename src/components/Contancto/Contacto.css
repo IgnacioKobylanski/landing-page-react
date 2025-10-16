@@ -31,15 +31,6 @@
   transition: width 0.3s ease;
 }
 
-.contacto h2:hover {
-  color: var(--orange);
-  text-shadow: 0 0 8px var(--orange);
-}
-
-.contacto h2:hover::after {
-  width: 100%;
-}
-
 .contacto-lista {
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +52,6 @@
 
 .contacto-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px var(--orange);
 }
 
 .icon {

@@ -26,18 +26,6 @@
   
 }
 
-.hero h1:hover {
-  color: var(--orange);
-  text-shadow: 0 0 8px var(--hover-orange-light);
-}
-
-.hero p:hover {
-  color: var(--orange);
-  text-shadow: 0 0 8px var(--hover-orange-light);
- }
-
-
-
 
 @keyframes slideInLeft {
   from {

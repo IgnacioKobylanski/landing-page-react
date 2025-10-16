@@ -12,35 +12,7 @@
   color: var(--color-white);
   font-size: 2rem;
   text-align: center;
-}
-
-
-.underline-title {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.underline-title::after {
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 0%;
-  bottom: 0;
-  left: 0;
-  background-color: var(--orange)!important;
-  transition: width 0.5s ease;
-}
-
-.underline-title:hover {
-  color: var(--orange)!important;
-  transform: scale(1.05);
-  text-shadow: 0 0 8px var(--orange-light)!important;
-}
-
-.underline-title:hover::after {
-  width: 100%;
+  cursor:default;
 }
 
 .cards-container {
