@@ -23,7 +23,8 @@ const contactos = [
 const Contacto = () => {
   return (
     <section className="contacto" id="contacto">
-      <h2>Contacto</h2>
+      <h2 id="contact-title">¿Listo para transformar tu producción?</h2>
+      <p id="p-contact">Contacta con un ejecutivo comercial para coordinar una charla con nuestros expertos</p>
       <div className="contacto-lista">
         {contactos.map((c, i) => (
           <div className="contacto-item" key={i}>

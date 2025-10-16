@@ -4,7 +4,7 @@ import "../BotonScroll/BotonScroll.css";
 
 const BotonScroll = () => {
   const scrollToTop = () => {
-    const navb = document.getElementById("navb");
+    const navb = document.getElementById("hero");
     if (navb) {
       navb.scrollIntoView({ behavior: "smooth" });
     } else {

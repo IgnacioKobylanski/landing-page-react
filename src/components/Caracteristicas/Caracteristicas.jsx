@@ -22,40 +22,41 @@ const Caracteristicas = () => {
   return (
     <section id="caracteristicas" className="caracteristicas">
       <div className="caracteristicas-contenido">
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={1}
-        loop={true}
-        centeredSlides={true}
-        modules={[Autoplay, EffectFade]}
-        effect="fade"
-        fadeEffect={{ crossFade: true }} 
-        breakpoints={{
-          768: {
-            slidesPerView: 1,
-          },
-          1024: {
-            slidesPerView: 1,
-          },
-        }}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}    
-      >
-        {caracteristicasData.map(({ id, icon, title }) => (
-          <SwiperSlide key={id}>
-            <div className="caracteristica-card">
-              <div className="icon">{icon}</div>
-              {/* <h3>{title}</h3> */}
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <div className="boton-contacto-wrapper">
-          <a href="#contacto" className="boton-contacto">
-            Contacta un asesor
-          </a>
+        <h3 className="carousel-title">Empresas que confian en nosotros</h3>
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={1}
+          loop={true}
+          centeredSlides={true}
+          modules={[Autoplay, EffectFade]}
+          effect="fade"
+          fadeEffect={{ crossFade: true }} 
+          breakpoints={{
+            768: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 1,
+            },
+          }}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}    
+        >
+          {caracteristicasData.map(({ id, icon, title }) => (
+            <SwiperSlide key={id}>
+              <div className="caracteristica-card">
+                <div className="icon">{icon}</div>
+                {/* <h3>{title}</h3> */}
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="boton-contacto-wrapper">
+            <a href="#contacto" className="boton-contacto">
+              Contacta un asesor
+            </a>
         </div>
       </div>
     </section>

@@ -12,22 +12,24 @@ Aunque fue hecho con código, **podés cambiar textos, imágenes o colores sin t
 2. Entrá en: src/components
 3. Vas a ver varias carpetas con nombres fáciles de entender:
 - `Hero` → la parte de arriba (presentación)
-- `Caracteristicas` → los puntos destacados
-- `Funcionalidades` → las tarjetas naranjas
-- `OtrasFunciones` → las funciones adicionales
-- `Soluciones` → la parte con engranajes y conexiones
-- `Footer` → el pie de página
+- `Nosotros` → Una breve presentación de la empresa.
+- `Caracteristicas` → carrusel.
+- `Beneficios` → las tarjetas naranjas.
+- `Caso de Exito` → Los porcentajes y sus textos.
+- `Ventajas` → las tarjetas blancas.
+- `Contacto` → informacion de los contactos.
+- `Footer` → el pie de página con los links a las redes.
 
 4. Dentro de cada carpeta hay un archivo `.jsx`.  
-Por ejemplo, si querés cambiar el título principal:
+Por ejemplo, si querés cambiar el texto:
 - Abrí `Hero.jsx`
 - Buscá algo como:
   ```jsx
-  <h1>Tu software de gestión inteligente</h1>
+  <p>Todo tu proceso industrial en un Software ERP/MES integral especializado en convertidores, gráficas y empresas de envases.</p>
   ```
 - Cambiá solo el texto dentro de las etiquetas:
   ```jsx
-  <h1>Gestión moderna y eficiente</h1>
+  <p>Gestión moderna y eficiente</p>
   ```
 - Guardá el archivo.
 

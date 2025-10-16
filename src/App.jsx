@@ -7,11 +7,10 @@ import Beneficios from './components/Beneficios/Beneficios'
 import Caracteristicas from './components/Caracteristicas/Caracteristicas'
 import CasoDeExito from './components/CasoDeExito/CasoDeExito'
 import Ventajas from './components/Ventajas/Ventajas'
-import OtrasFunciones from './components/OtrasFunciones/OtrasFunciones'
-import Soluciones from './components/Soluciones/Soluciones'
 import Contacto from './components/Contancto/Contancto'
 import Footer from './components/Footer/Footer'
 import BotonScroll from './components/BotonScroll/BotonScroll'
+import CirculoProgreso from './components/CirculoProgreso/CirculoProgreso'
 
 function App() {
   const [count, setCount] = useState(0)

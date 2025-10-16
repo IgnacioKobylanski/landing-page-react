@@ -8,6 +8,7 @@
   --light-green: #48ffd5;
   --light-green-glow: #48ffd5b3;
   --hover-green: #48FFD533;
+  
   /*Pagina violeta*/
   --medium-purple: rgb(94, 90, 151);/* posible variable */
   --purple-glow: #5e5a97b3;/* reemplaza a  --light-green-glow */
@@ -19,28 +20,12 @@
   --blue-background: #1d3673;
   --dark-blue:  #263d89;
   --light-blue:  #5c6fd4;
+  --gray-blue:#9ebfd9;
   --orange: #ef8e3e;
   --orange-light:#f3cba2;
   --color-white: #ffffff;
-
-
-  /*posibles variaciones*/
-  --gray-background: #d2d4d9;
-  --hover-orange-light: #ffa560;
-  --hover-orange-dark: #cc6d1f;
-  --glow-orange-medium: #ef8e3e80;
-  
-  /*f3cba2 (naranja claro fondo)
-celeste letras: 9ebfd9
-gris logo: 181818
-#263d89 LOGO - AZUL FONDO ▮
-1d3673 azul mas oscuro
-#eaad45 LOGO - NARANJA ARRIBA ▮
-#5c6fd4 LOGO - CELESTE ABAJO ▮
-#d2d4d9 LOGO - GRIS COLOR TIPOGRAFÍA ▮
-#000000 NEGRO FONDO Y TEXTO ▮
-#ef8e3e NARANJA FONDO Y TEXTO ▮*/
-
+  --gray:#d2d4d9;
+  --black:#000000;
 }
 
 html, body {

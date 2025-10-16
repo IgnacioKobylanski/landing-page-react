@@ -16,12 +16,12 @@ Footer{
     gap: 2rem;
 }
 .social-media a {
-  color: var(--color-white); /* color inicial de los íconos */
-  font-size: 2rem;            /* tamaño de los íconos */
-  transition: color 0.3s ease; /* efecto suave al pasar el mouse */
+  color: var(--color-white);
+  font-size: 2rem;
+  transition: color 0.3s ease; 
 
 }
 
 .social-media a:hover {
-  color: var(--orange);       /* cambia a naranja al pasar el mouse */
+  color: var(--orange);
 }
