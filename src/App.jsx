@@ -20,7 +20,7 @@ function App() {
       <Header />
       <Hero />
       <Nosotros />
-      <Caracteristicas />
+{/*       <Caracteristicas /> */}
       <Beneficios />
       <CasoDeExito />
       <Ventajas />

@@ -10,9 +10,9 @@ import img4 from "../../assets/4.png";
 // ====== Datos de los casos ======
 const casos = [
   { id: 1, img: img1, texto: "Trazabilidad de órdenes digitales en tiempo real", numero: "100%", porcentaje: 100 },
-  { id: 2, img: img2, texto: "Reposición de fotopolímeros/clichés", numero: "-60%", porcentaje: 60 },
-  { id: 3, img: img3, texto: "Confiabilidad del inventario y su ubicación", numero: "+95%", porcentaje: 95 },
-  { id: 4, img: img4, texto: "Minutos para la carga de partes diarios", numero: "83", porcentaje: 83 },
+  { id: 2, img: img2, texto: "Reducción de reposición de fotopolímeros/clichés", numero: "-60%", porcentaje: 60 },
+  { id: 3, img: img3, texto: "Fiabilidad del inventario y su ubicación física", numero: "+95%", porcentaje: 95 },
+  { id: 4, img: img4, texto: "Disminución de tiempo de carga de partes diarios", numero: "83", porcentaje: 83 },
 ];
 
 const CasoDeExito = () => {

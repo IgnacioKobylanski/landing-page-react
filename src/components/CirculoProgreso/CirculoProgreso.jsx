@@ -8,7 +8,7 @@ const CirculoProgreso = ({
   color = "var(--orange)",
   fondoColor = "var(--gray-blue)",
   textoColor = "var(--color-white)",
-  numeroCentral, // ej: "100%", "60%", "95%", "83%"
+  numeroCentral,
 }) => {
   const [porcentaje, setPorcentaje] = useState(0);
   const [numeroAnimado, setNumeroAnimado] = useState(0);
@@ -19,7 +19,6 @@ const CirculoProgreso = ({
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
 
-  // Extrae solo el número, elimina signos y espacios
   const numeroFinal = Number(numeroCentral.replace(/[^0-9]/g, "")) || 0;
 
   useEffect(() => {
