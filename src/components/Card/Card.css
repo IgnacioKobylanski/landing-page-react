@@ -19,6 +19,7 @@
   max-width: 25rem;
   min-height: 15rem;
   height: auto; 
+  height: 100%;
 }
 
 .card-icon {

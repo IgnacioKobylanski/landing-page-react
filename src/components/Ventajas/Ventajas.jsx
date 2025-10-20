@@ -1,26 +1,8 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Card from "../Card/Card";
 import "../Ventajas/Ventajas.css";
-import { PiUsersFourLight } from "react-icons/pi";
-import { BsBuildings } from "react-icons/bs";
-import { GrCubes } from "react-icons/gr";
-import { FaRegCalendarAlt } from "react-icons/fa";
-import { SlLocationPin } from "react-icons/sl";
-
-
-import { FaUsers } from "react-icons/fa6";
-import { FaSliders } from "react-icons/fa6";
-import { FaHeadset } from "react-icons/fa6";
-import { FaCogs } from "react-icons/fa";
-import { FaRegLightbulb } from "react-icons/fa";
-import { FaChartLine } from "react-icons/fa";
-
-
-
-
-
-
-
+import { FaUsers, FaSlidersH, FaHeadset, FaCogs, FaLightbulb, FaChartLine } from "react-icons/fa";
 
 const ventajasData = [
   {
@@ -29,7 +11,7 @@ const ventajasData = [
     description: "Conformamos un equipo interdisciplinario involucrado en el asesoramiento inicial y la capacitación de tu personal"
   },
   {
-    icon: <FaSliders size={40} />,
+    icon: <FaSlidersH size={40} />,
     title: "Adaptación a tus procesos",
     description: "Diseñamos un sistema que se ajusta a tu realidad productiva para que la transición sea natural y sin fricciones"
   },
@@ -44,7 +26,7 @@ const ventajasData = [
     description: "Ofrecemos una gestión integral y especializada con control de insumos, reservas, mantenimiento y calidad"
   },
   {
-    icon: <FaRegLightbulb size={40} />,
+    icon: <FaLightbulb size={40} />,
     title: "Herramientas innovadoras",
     description: "Optimizamos tu planta con Data Relay, etiquetas QR y panel de producción disponible en versión móvil"
   },
@@ -63,14 +45,22 @@ const Ventajas = () => {
       </h2>
       <div className="cards-container">
         {ventajasData.map((item, index) => (
-          <Card
+          <motion.div
             key={index}
-            icon={item.icon}
-            title={item.title}
-            description={item.description}
-            backgroundColor="white"
-            textColor="var(--dark-blue)"
-          />
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            style={{ width: "100%" }} // asegura que la tarjeta ocupe todo el espacio
+          >
+            <Card
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+              backgroundColor="white"
+              textColor="var(--dark-blue)"
+            />
+          </motion.div>
         ))}
       </div>
     </section>
