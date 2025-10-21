@@ -2,18 +2,15 @@ import React from "react";
 import "../CasoDeExito/CasoDeExito.css";
 import CirculoProgreso from "../CirculoProgreso/CirculoProgreso";
 
-import img1 from "../../assets/1.png";
-import img2 from "../../assets/2.png";
-import img3 from "../../assets/3.png";
-import img4 from "../../assets/4.png";
 
 // ====== Datos de los casos ======
 const casos = [
-  { id: 1, img: img1, texto: "Trazabilidad de órdenes digitales en tiempo real", numero: "100%", porcentaje: 100 },
-  { id: 2, img: img2, texto: "Reducción de reposición de fotopolímeros/clichés", numero: "-60%", porcentaje: 60 },
-  { id: 3, img: img3, texto: "Fiabilidad del inventario y su ubicación física", numero: "+95%", porcentaje: 95 },
-  { id: 4, img: img4, texto: "Disminución de tiempo de carga de partes diarios", numero: "83", porcentaje: 83 },
+  { id: 1, texto: "Trazabilidad de órdenes digitales en tiempo real", numero: "100%", porcentaje: 100 },
+  { id: 2, texto: "Reducción de reposición de fotopolímeros/clichés", numero: "-60%", porcentaje: 60 },
+  { id: 3, texto: "Fiabilidad del inventario y su ubicación física", numero: "+95%", porcentaje: 95 },
+  { id: 4, texto: "Disminución de tiempo de carga de partes diarios", numero: "83", porcentaje: 83 },
 ];
+
 
 const CasoDeExito = () => {
   return (

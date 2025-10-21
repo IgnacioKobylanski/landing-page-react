@@ -24,7 +24,7 @@ const Beneficios = () => {
         {funcionalidadesData.map((item, index) => (
           <motion.div
             key={index}
-            style={{ width: "100%", display: "flex" }} // asegura que Card se estire
+            style={{ width: "100%", display: "flex" }}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -34,7 +34,7 @@ const Beneficios = () => {
               icon={item.icon}
               title={item.title}
               description={item.text}
-              style={{ flex: 1, width: "100%" }} // fuerza ancho completo
+              style={{ flex: 1, width: "100%" }}
             />
           </motion.div>
         ))}

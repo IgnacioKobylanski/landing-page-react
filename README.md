@@ -22,14 +22,17 @@ Abrir el proyecto:
 3. Abrí una terminal dentro de esa carpeta.
 
 Instalar dependencias:
+en la consola escribi-
 npm install
 
 Ejecutar el proyecto:
+en la consola escribi-
 npm start
-- Esto abrirá el proyecto en http://localhost:3000/
+- Esto abrirá el proyecto en http://localhost:xxxxx/ (el puerto puede variar pero en la consola dira que direccion es)
 - Cada vez que guardes cambios, la página se actualizará automáticamente.
 
 Crear la versión para subir al servidor:
+en la consola escribi-
 npm run build
 - Esto crea la carpeta build/ con todos los archivos listos para producción.
 

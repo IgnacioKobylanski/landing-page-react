@@ -51,7 +51,7 @@ const Ventajas = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            style={{ width: "100%" }} // asegura que la tarjeta ocupe todo el espacio
+            style={{ width: "100%" }}
           >
             <Card
               icon={item.icon}

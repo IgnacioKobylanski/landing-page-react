@@ -10,7 +10,7 @@ import Ventajas from './components/Ventajas/Ventajas'
 import Contacto from './components/Contancto/Contancto'
 import Footer from './components/Footer/Footer'
 import BotonScroll from './components/BotonScroll/BotonScroll'
-import CirculoProgreso from './components/CirculoProgreso/CirculoProgreso'
+
 
 function App() {
   const [count, setCount] = useState(0)
