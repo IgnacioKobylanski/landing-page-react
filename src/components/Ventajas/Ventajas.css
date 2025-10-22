@@ -2,6 +2,8 @@
   padding: 2rem 1rem;
   background-color: var(--light-blue);
   margin-bottom: 4rem;
+  scroll-margin-top: 120px;
+  overflow: visible;
 }
 
 .ventajas h2 {

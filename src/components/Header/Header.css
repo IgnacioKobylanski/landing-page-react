@@ -9,11 +9,9 @@
 }
 
 .nav_logo img {
-  width: 6rem;
+  width: 5.5rem;
   height: auto;
   padding: 1rem;
-  border-radius: 50%;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav_items a {
@@ -37,13 +35,16 @@
   display: none;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 768px) {
 
   .navbar{
     position: sticky;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-bottom: 3rem;
+    
   }
+
   .nav_items {
     position: fixed;
     top: 0;
@@ -74,9 +75,9 @@
   width: 35px;
   height: 30px;
   cursor: pointer;
-  position: fixed;
+/*   position: fixed;
   top: 1.5rem;
-  right: 1.5rem;
+  right: 1.5rem; */
   z-index: 2001;
 }
 

@@ -12,6 +12,8 @@
   box-shadow: 0 0 10px var(--blue-background);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 999;
+  width: 3.5rem;   
+  height: 3.5rem;
 }
 
 .boton-scroll:hover {

@@ -4,7 +4,9 @@
   padding: 3rem 2rem;
   border-radius: 12px;
   text-align: center;
-  margin-top: -4rem;
+/*   margin-top: -4rem; */
+  scroll-margin-top: 120px;
+  overflow: visible;
 }
 
 .contacto h2 {

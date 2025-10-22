@@ -7,8 +7,8 @@ import { FaUsers, FaSlidersH, FaHeadset, FaCogs, FaLightbulb, FaChartLine } from
 const ventajasData = [
   {
     icon: <FaUsers size={40} />,
-    title: "Implementación personalizada",
-    description: "Conformamos un equipo interdisciplinario involucrado en el asesoramiento inicial y la capacitación de tu personal"
+    title: "Implementación adaptada",
+    description: "Conformamos un equipo interdisciplinario involucrado en el asesoramiento y la capacitación"
   },
   {
     icon: <FaSlidersH size={40} />,

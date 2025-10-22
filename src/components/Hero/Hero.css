@@ -1,9 +1,10 @@
-
 #hero{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 120px;
+  overflow: visible;
 }
 
 #hero p {
@@ -22,8 +23,7 @@
 
 
 .hero h1, .hero p {
-  text-align: center;
-  
+  text-align: center; 
 }
 
 
@@ -78,6 +78,7 @@
     justify-content: space-around;
     text-align: left;
     padding: 6rem 2rem;
+    padding-top: 120px;
   }
 
   .hero h1, .hero p {

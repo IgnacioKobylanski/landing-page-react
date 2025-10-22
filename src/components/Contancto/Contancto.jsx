@@ -14,7 +14,7 @@ const contactos = [
     email: "dmicozzi@equisystem.com.ar",
   },
   {
-    nombre: "Tomas Pereyra - Comercial Latinoamérica",
+    nombre: "Tomas Pereyra - Comercial LATAM",
     telefono: "+54 11 3174 8554",
     email: "tpereyra@equisystem.com.ar",
   },
